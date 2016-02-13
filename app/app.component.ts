@@ -8,14 +8,8 @@ import {DashboardComponent} from './dashboard.component';
 
 @Component({
 	selector: 'my-app',
-	template: `
-		<h1>{{title}}</h1>
-		<nav>
-			<a [routerLink]="['Dashboard']">Dashboard</a>
-			<a [routerLink]="['Heroes']">Heroes</a>
-		</nav>
-		<router-outlet></router-outlet>
-	`,
+	templateUrl: 'app/app.component.html',
+	styleUrls: ['app/app.component.css'],
 	directives: [ROUTER_DIRECTIVES],
 	providers: [
 		ROUTER_PROVIDERS,
